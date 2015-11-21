@@ -1,25 +1,21 @@
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar">
     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Project name</a>
+        <div class="logo col-xs-7">
+            <img src="asset/images/petarung_logo.jpg">
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right">
-                <div class="form-group">
+        <div class="header_form col-xs-5">
+            <form class="">
+                <div class="form-group col-xs-12 searchbox">
+                    <input type="text" placeholder="Cari topik, artikel, atau ulasan" class="form-control">
+                    <i class="fa fa-search"></i>
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
                     <input type="text" placeholder="Email" class="form-control">
                 </div>
-                <div class="form-group">
-                    <input type="password" placeholder="Password" class="form-control">
+                <div class="col-sm-12 col-md-6">
+                    <button type="submit" class="btn btn-success">subscribe sekarang</button>
                 </div>
-                <button type="submit" class="btn btn-success">Sign in</button>
             </form>
         </div>
-        <!--/.navbar-collapse -->
     </div>
 </nav>
