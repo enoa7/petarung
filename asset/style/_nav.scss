@@ -1,0 +1,106 @@
+.fa.fa-search {
+    transform: rotateY(360deg);
+}
+
+.hover {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.navbar {
+    // set the background color for the nav
+    background: #000;
+}
+
+.navbar.mobile {
+    overflow: hidden;
+    padding-bottom: 10px;
+    .fa {
+        color: #fff;
+        &:hover,
+        &.hover_effect {
+            color: $secondary-color;
+        }
+    }
+    .login {
+        color: $main-color;
+        font-weight: 700;
+    }
+    .separator {
+        color: #fff;
+    }
+    .container > div {
+        position: relative;
+        .logo {
+            left: -15px;
+        }
+        .header_form {
+            right: -15px;
+        }
+    }
+}
+
+.navbar.mobile .header_form {
+    font-size: 7vw;
+    padding-top: 7vw;
+    > div:first-child {
+        // border-left: 1px solid #fff;
+    }
+}
+
+.navbar.desktop .header_form {
+    padding-top: 30px;
+    @media screen and (min-width: 768px) {
+        .fa.fa-search {
+            position: absolute;
+            right: 35px;
+            top: 10px;
+            z-index: 2;
+        }
+    }
+    // make the button width 100%
+    button[type="submit"] {
+        width: 100%;
+        background: $main-color;
+        border-color: $main-color;
+        color: #000;
+        text-transform: uppercase;
+        &:focus {
+            background: $main-color;
+            border-color: $main-color;
+        }
+    }
+    .form-control {
+        position: relative;
+        ;
+        background: $secondary-color;
+        border-color: $secondary-color;
+        color: #fff;
+        &:focus {
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(100, 101, 103, 0.6);
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(100, 101, 103, 0.6);
+        }
+    }
+}
+
+@media screen and (orientation:landscape) {
+    .navbar.mobile .logo img {
+        max-width: 20vw;
+    }
+    .navbar.mobile .header_form {
+        font-size: 5vw;
+        padding-top: 6vw;
+    }
+}
+
+    .ad-text {
+        font-size: .6vw;
+        color: #fff;
+        > div {
+            
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+        }
+    }

@@ -5,5 +5,4 @@
 
     <!-- all compiled scripts -->
     <script type="text/javascript" src="asset/main.min.js"></script>
-
 </html>
