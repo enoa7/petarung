@@ -12,8 +12,14 @@
 @import 'style/kodein';
 @import 'style/nav';
 @import 'style/page-ulasan';
+@import 'style/icons';
+@import 'style/fonts';
 /*--*/
 
 .highlight {
 	color: $main-color;
+}
+body {
+	font-family: 'Gotham';
+	font-size: $base-font-size;
 }

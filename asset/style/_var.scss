@@ -1,2 +1,8 @@
+
+/*colors--*/
 $main-color: #FAA519;
 $secondary-color: #383739;
+$secondary-color-light: lighten($secondary-color, 17%);
+
+/*size--*/
+$base-font-size: 14px;

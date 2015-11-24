@@ -1,3 +1,4 @@
+// rotate the search to 360deg
 .fa.fa-search {
     transform: rotateY(360deg);
 }
@@ -7,9 +8,46 @@
     -webkit-touch-callout: none;
 }
 
+// set the bg for the nav to black
 .navbar {
     // set the background color for the nav
     background: #000;
+    border-radius: 0;
+}
+
+//mobile menu for the header
+.navbar.mobile .header_form {
+    @media (max-width: 768px) and (orientation: portrait) {
+        font-size: 4vw;
+        padding-top: 7vw;
+    }
+    @media (max-width: 768px) and (orientation: landscape) {
+        font-size: 4vw;
+        padding-top: 5vw;
+    }
+    
+    .login {
+        color: $main-color;
+        font-weight: 700;
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+    > div {
+        float: right;
+    }
+    > div:first-child {
+        padding-left: 12px;
+    }
+    > div:nth-child(2) {
+        padding-left: 12px;
+        padding-right: 12px;
+        border-right: 1px solid #fff;
+        border-left: 1px solid #fff;
+    }
+    > div:last-child {
+        padding-right: 12px;
+    }
 }
 
 .navbar.mobile {
@@ -22,13 +60,6 @@
             color: $secondary-color;
         }
     }
-    .login {
-        color: $main-color;
-        font-weight: 700;
-    }
-    .separator {
-        color: #fff;
-    }
     .container > div {
         position: relative;
         .logo {
@@ -38,18 +69,21 @@
             right: -15px;
         }
     }
-}
-
-.navbar.mobile .header_form {
-    font-size: 7vw;
-    padding-top: 7vw;
-    > div:first-child {
-        // border-left: 1px solid #fff;
+    .logo img {
+        @media (max-width: 768px) and (orientation: portrait) {
+            max-width: 20vw;
+        }
+        @media (max-width: 768px) and (orientation: landscape) {
+            max-width: 18vw;
+        }
     }
 }
 
+
+// desktop menu for the header
 .navbar.desktop .header_form {
     padding-top: 30px;
+    .form-control {}
     @media screen and (min-width: 768px) {
         .fa.fa-search {
             position: absolute;
@@ -58,7 +92,7 @@
             z-index: 2;
         }
     }
-    // make the button width 100%
+    // header_form submit button style
     button[type="submit"] {
         width: 100%;
         background: $main-color;
@@ -70,9 +104,11 @@
             border-color: $main-color;
         }
     }
+    /* change the color, font size, etc for the header_form */
     .form-control {
+        font-size: $base-font-size - 2;
+        font-style: italic;
         position: relative;
-        ;
         background: $secondary-color;
         border-color: $secondary-color;
         color: #fff;
@@ -83,24 +119,36 @@
     }
 }
 
-@media screen and (orientation:landscape) {
-    .navbar.mobile .logo img {
-        max-width: 20vw;
+.navbar.desktop {
+    .menu-list ul {
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
-    .navbar.mobile .header_form {
-        font-size: 5vw;
-        padding-top: 6vw;
+    .menu-list li {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-weight: 700;
+        @media (min-width: $screen-md-min) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        a {
+            color: #fff;
+            &:hover {
+                color: $main-color;
+                text-decoration: none !important;
+            }
+        }
     }
 }
 
-    .ad-text {
-        font-size: .6vw;
-        color: #fff;
-        > div {
-            
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    padding-top: 5px;
-    padding-bottom: 5px;
-        }
+.ad-text {
+    font-size: .6vw;
+    color: #fff;
+    > div {
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
+}

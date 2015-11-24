@@ -24,6 +24,11 @@ ul.nodots > li {
 	padding-top: 20px;
 	padding-bottom: 20px; 
 }
+.spacepad-nosides {
+	@extend .spacepad;
+	padding-left: 0;
+	padding-right: 0;
+}
 .spacemar {
 	margin-top: 20px;
 	margin-bottom: 20px;
