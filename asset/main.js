@@ -9,7 +9,7 @@ $(document).ready(function () {
 	// instantiate
 	 FastClick.attach(document.body);
     $('.navbar.mobile .hamburger').click(function() {
-    	$('.red_box').toggleClass('deactivate active');
+    	$('.mobile-menu-overlay').toggleClass('deactivate active');
     });
 
 });

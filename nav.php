@@ -39,7 +39,7 @@
         </div>
     </div>
 </nav>
-<div class="red_box deactivate">
+<div class="mobile-menu-overlay deactivate">
     <div class="container">
         <ul>
             <li>afqawdw</li>
