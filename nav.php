@@ -3,16 +3,16 @@
  <nav class="navbar mobile nomarginbottom">
     <div class="container">
         <div class="">
-            <div class="logo col-xs-4 nopaddingleft">
+            <div class="logo col-xs-5 nopaddingleft">
                 <img class="img-responsive"src="asset/images/petarung_logo_mobile.png">
             </div>
-            <div class="header_form col-xs-7 nopaddingright">
+            <div class="header_form col-xs-7">
                 <div class="hamburger">
-                    <i class="fa fa-bars hover"></i>
+                    <i class="fa fa-bars"></i>
                 </div>
                 <div class="login">log in</div>
                 <div class="searchbox">
-                    <i class="fa fa-search hover"></i>
+                    <i class="fa fa-search"></i>
                 </div>
                 <!-- <div class="col-xs-3 text-left pull-right hamburger">
                     <i class="fa fa-bars hover"></i>
@@ -39,6 +39,15 @@
         </div>
     </div>
 </nav>
+<div class="red_box deactivate">
+    <div class="container">
+        <ul>
+            <li>afqawdw</li>
+            <li>afqawdw</li>
+            <li>afqawdw</li>
+        </ul>
+    </div>
+</div>
 <?php } else { ?>
 <nav class="navbar desktop nomarginbottom">
     <div class="container">

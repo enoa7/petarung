@@ -14,12 +14,35 @@
 @import 'style/page-ulasan';
 @import 'style/icons';
 @import 'style/fonts';
+
+/*partials--*/
+@import 'style/_partials/color-mixin';
+
 /*--*/
 
 .highlight {
-	color: $main-color;
+    color: $main-color;
 }
+
 body {
-	font-family: 'Gotham';
-	font-size: $base-font-size;
+    font-family: 'Gotham';
+    font-size: $base-font-size;
+}
+
+.red_box {
+     @include background-opacity(#CC1E2E, 0.8);
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     transition: 1s ease;
+     &.deactivate {
+     	left: -100%;
+     }
+     &.active {
+     	left: 0;
+     }
+     ul {
+     	color: #fff;
+     }
+
 }
