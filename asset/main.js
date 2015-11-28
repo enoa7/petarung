@@ -6,9 +6,10 @@
 
 $(document).ready(function () {
 
+	console.log('start');
 	// instantiate
 	 FastClick.attach(document.body);
-    $('.navbar.mobile .hamburger').click(function() {
+    $('.trigger').click(function() {
     	$('.mobile-menu-overlay').toggleClass('deactivate active');
     });
 

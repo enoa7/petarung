@@ -7,7 +7,7 @@
                 <img class="img-responsive"src="asset/images/petarung_logo_mobile.png">
             </div>
             <div class="header_form col-xs-7">
-                <div class="hamburger">
+                <div class="hamburger trigger">
                     <i class="fa fa-bars"></i>
                 </div>
                 <div class="login">log in</div>
@@ -41,10 +41,16 @@
 </nav>
 <div class="mobile-menu-overlay deactivate">
     <div class="container">
-        <ul>
-            <li>afqawdw</li>
-            <li>afqawdw</li>
-            <li>afqawdw</li>
+        <div class="close-btn">
+            <div><i class="fa fa-times trigger"></i></div>
+        </div>
+        <ul class="menu-list nopadding nodots nomarginbottom">
+            <li>home</li>
+            <li>berita terkini</li>
+            <li>artikel</li>
+            <li>kategory beladiri</li>
+            <li>ulasan</li>
+            <li>kontak</li>
         </ul>
     </div>
 </div>
