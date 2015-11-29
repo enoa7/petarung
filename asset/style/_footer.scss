@@ -5,8 +5,7 @@
 /* --------------------- */
 
 footer {
-    position: static;
-    bottom: 0;
+    position: absolute;
     width: 100%;
     height: auto;
     background: #000;
@@ -25,7 +24,7 @@ footer {
         font-size: .8em;
         @include spacepad(3px);
         a {
-            color: #939597;
+            color: $secondary-color-light;
             &:focus,
             &:active,
             &:hover {
@@ -65,4 +64,9 @@ footer {
     	}
     }
 
+    //back to top button (mobile only for now)
+    .back-to-top {
+        text-align: center;
+        font-size: 3em;
+    }
 }

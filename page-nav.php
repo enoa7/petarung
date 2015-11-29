@@ -1,6 +1,7 @@
 
+<nav id="page-nav">
 <?php  if( $detect->isMobile() && !$detect->isTablet() ) { ?>
- <nav class="navbar mobile nomarginbottom">
+ <section class="navbar mobile nomarginbottom">
     <div class="container">
         <div class="">
             <div class="logo col-xs-5 nopaddingleft">
@@ -14,37 +15,16 @@
                 <div class="searchbox">
                     <i class="fa fa-search"></i>
                 </div>
-                <!-- <div class="col-xs-3 text-left pull-right hamburger">
-                    <i class="fa fa-bars hover"></i>
-                </div>
-                <div class="col-xs-1 separator pull-right text-center">|</div>
-                <div class="col-xs-4 pull-right text-center">log in</div>
-                <div class="col-xs-1 separator pull-right text-center">|</div>
-                <div class="col-xs-3 text-right pull-right searchbox">
-                    <i class="fa fa-search hover"></i>
-                </div> -->
-                <!-- <form class="">
-                    <div class="form-group col-xs-12 searchbox">
-                        <input type="text" placeholder="Cari topik, artikel, atau ulasan" class="form-control">
-                        <i class="fa fa-search"></i>
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <input type="text" placeholder="Email" class="form-control">
-                    </div>
-                    <div class="col-sm-6">
-                       <button type="submit" class="btn btn-warning">subscribe sekarang</button>
-                    </div>
-                </form> -->
             </div>
         </div>
     </div>
-</nav>
+</section>
 <div class="mobile-menu-overlay deactivate">
     <div class="container">
         <div class="close-btn">
             <div><i class="fa fa-times trigger"></i></div>
         </div>
-        <ul class="menu-list nopadding nodots nomarginbottom">
+        <ul class="menu-list nopadding nodots nomarginbottom text-center">
             <li>home</li>
             <li>berita terkini</li>
             <li>artikel</li>
@@ -55,29 +35,8 @@
     </div>
 </div>
 <?php } else { ?>
-<nav class="navbar desktop nomarginbottom">
+<section class="navbar desktop nomarginbottom">
     <div class="container">
-        <div class="logo col-sm-4 col-md-7">
-            <img class="img-responsive"src="asset/images/petarung_logo.jpg">
-        </div>
-        <div class="header_form col-sm-8 col-md-5 nopaddingright">
-            <form class="">
-                <div class="form-group col-xs-12 searchbox">
-                    <input type="text" placeholder="Cari topik, artikel, atau ulasan" class="form-control">
-                    <i class="fa fa-search"></i>
-                </div>
-                <div class="form-group col-sm-6 nopaddingright">
-                    <input type="text" placeholder="Email" class="form-control">
-                </div>
-                <div class="col-sm-6">
-                   <button type="submit" class="btn btn-warning">subscribe sekarang</button>
-                </div>
-            </form>
-            <div class="ad-text col-xs-12 visible-md visible-lg">
-            <div><span class="highlight">LOG IN</span> atau <span class="highlight">DAFTAR SEKARANG</span> untuk sesuaikan berita pilihan Anda</div>
-                
-            </div>
-        </div>
         <div class="header_nav col-xs-12 spacepad-nosides">
             <div class="container">
                 <div class="menu-list col-sm-8 nopadding">
@@ -119,5 +78,6 @@
             </div>
         </div>
     </div>
-</nav>
+</section>
 <?php }?>
+</nav>

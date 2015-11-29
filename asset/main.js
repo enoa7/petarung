@@ -4,13 +4,27 @@
 // @koala-prepend 'vendor/slick/js/slick.min.js'
 
 
-$(document).ready(function () {
+$(document).ready(function() {
 
-	console.log('start');
-	// instantiate
-	 FastClick.attach(document.body);
+    // instantiate
+    FastClick.attach(document.body);
     $('.trigger').click(function() {
-    	$('.mobile-menu-overlay').toggleClass('deactivate active');
+        $('.mobile-menu-overlay').toggleClass('deactivate active');
     });
 
+    var itemStatus = $('.item-status-list > .item-status');
+    $(itemStatus).each(function(index, element){
+    	var list = $(this).attr('data-value');
+    	var getfill = $(this).attr('data-fcolor');
+    	console.log(getfill);
+    	var getemptyfill = $(this).attr('data-bcolor');
+    	$(this).circleProgress({
+    		value: list,
+    		size: '45',
+    		fill: {color: getfill},
+    		emptyFill: getemptyfill
+    	}).on('circle-animation-progress', function(event, progress, stepValue) {
+    		$(this).find('span').text(String(stepValue.toFixed(2)).substr(2));
+		});
+    });
 });

@@ -8015,13 +8015,6 @@ button.close {
 /* ------------------- */
 /* ------------------- */
 /* ------------------- */
-.petarung-line {
-  border-top: 2px solid #939597; }
-  @media (min-width: 768px) {
-    .petarung-line {
-      margin-left: 25px;
-      margin-right: 25px; } }
-
 /*kodein--*/
 /*colors--*/
 /*size--*/
@@ -10288,15 +10281,48 @@ ul.nodots > li {
 .skew-content {
   transform: skew(0, 3deg); }
 
-.fa.fa-search {
-  transform: rotateY(360deg);
-  color: #fff; }
+/**
+* ICONS (SVG) CSS
+**/
+.header_nav .social-list {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .header_nav .social-list {
+      padding-top: 15px;
+      padding-bottom: 15px; } }
+  .header_nav .social-list > div {
+    float: right;
+    padding-right: 10px;
+    padding-left: 10px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .header_nav .social-list > div {
+        padding-left: 8px;
+        padding-right: 8px; } }
+.header_nav svg.social-icons {
+  width: 23px;
+  height: 23px;
+  fill: #636265;
+  cursor: pointer; }
 
+@font-face {
+  font-family: "Gotham-Med";
+  src: url("text_font/gotham-medium.eot?") format("eot"), url("text_font/gotham-medium.woff2") format("woff2"), url("text_font/gotham-medium.woff") format("woff"), url("text_font/gotham-medium.ttf") format("truetype"), url("text_font/gotham-medium.svg#Gotham-Med") format("svg"); }
+@font-face {
+  font-family: "Gotham-Light";
+  src: url("text_font/gotham-light.eot?") format("eot"), url("text_font/gotham-light.woff2") format("woff2"), url("text_font/gotham-light.woff") format("woff"), url("text_font/gotham-light.ttf") format("truetype"), url("text_font/gotham-light.svg#Gotham-Light") format("svg"); }
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url("text_font/gotham-bold.eot?") format("eot"), url("text_font/gotham-bold.woff2") format("woff2"), url("text_font/gotham-bold.woff") format("woff"), url("text_font/gotham-bold.ttf") format("truetype"), url("text_font/gotham-bold.svg#Gotham-Bold") format("svg"); }
+@font-face {
+  font-family: "Gotham-Thin";
+  src: url("text_font/gotham-thin.eot?") format("eot"), url("text_font/gotham-thin.woff2") format("woff2"), url("text_font/gotham-thin.woff") format("woff"), url("text_font/gotham-thin.ttf") format("truetype"), url("text_font/gotham-thin.svg#Gotham-Thin") format("svg"); }
+/*page-template--*/
 .hover {
   -webkit-user-select: none;
   -webkit-touch-callout: none; }
 
-.navbar {
+#page-nav {
   background: #000;
   border-radius: 0; }
 
@@ -10348,35 +10374,6 @@ ul.nodots > li {
     .navbar.mobile .logo img {
       max-width: 18vw; } }
 
-.navbar.desktop .header_form {
-  padding-top: 30px;
-  /* change the color, font size, etc for the header_form */ }
-  @media screen and (min-width: 768px) {
-    .navbar.desktop .header_form .fa.fa-search {
-      position: absolute;
-      right: 35px;
-      top: 10px;
-      z-index: 2; } }
-  .navbar.desktop .header_form button[type="submit"] {
-    width: 100%;
-    background: #FAA519;
-    border-color: #FAA519;
-    color: #000;
-    text-transform: uppercase; }
-    .navbar.desktop .header_form button[type="submit"]:focus {
-      background: #FAA519;
-      border-color: #FAA519; }
-  .navbar.desktop .header_form .form-control {
-    font-size: 12px;
-    font-style: italic;
-    position: relative;
-    background: #383739;
-    border-color: #383739;
-    color: #fff; }
-    .navbar.desktop .header_form .form-control:focus {
-      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(100, 101, 103, 0.6);
-      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(100, 101, 103, 0.6); }
-
 .navbar.desktop .menu-list ul {
   padding-top: 20px;
   padding-bottom: 20px; }
@@ -10404,19 +10401,21 @@ ul.nodots > li {
     padding-bottom: 5px; }
 
 .mobile-menu-overlay {
-  background: #CC1E2E;
+  font-size: 16px;
+  background: #EF081E;
   /* The Fallback */
-  background: rgba(204, 30, 46, 0.8);
+  background: rgba(239, 8, 30, 0.8);
   position: absolute;
   width: 100%;
   height: 100%;
-  transition: 1s ease; }
+  transition: .5s ease;
+  z-index: 2; }
   .mobile-menu-overlay.deactivate {
     left: -100%; }
   .mobile-menu-overlay.active {
     left: 0; }
   .mobile-menu-overlay .close-btn {
-    color: #383739;
+    color: #fff;
     font-size: 1.3em;
     padding-top: 15px;
     padding-bottom: 15px; }
@@ -10431,50 +10430,78 @@ ul.nodots > li {
       padding-top: 8px;
       padding-bottom: 8px; }
 
-.page-wrap.ulasan {
+.page-wrap {
   background-color: #000; }
+  .page-wrap .page-banner > div {
+    border-bottom: 3px solid #0d0c0d; }
 
-/**
-* ICONS (SVG) CSS
-**/
-.header_nav .social-list {
-  padding-top: 20px;
-  padding-bottom: 20px; }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .header_nav .social-list {
-      padding-top: 15px;
-      padding-bottom: 15px; } }
-  .header_nav .social-list > div {
-    float: right;
-    padding-right: 10px;
-    padding-left: 10px; }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .header_nav .social-list > div {
-        padding-left: 8px;
-        padding-right: 8px; } }
-.header_nav svg.social-icons {
-  width: 23px;
-  height: 23px;
-  fill: #636265;
-  cursor: pointer; }
+.item {
+  font-size: 12px; }
+  .item-category {
+    color: #FAA519;
+    font-size: 1em;
+    font-size: 700;
+    text-transform: capitalize; }
+  .item-name {
+    text-transform: capitalize;
+    font-size: 1.8em;
+    color: #fff; }
 
-@font-face {
-  font-family: "Gotham-Med";
-  src: url("text_font/gotham-medium.eot?") format("eot"), url("text_font/gotham-medium.woff2") format("woff2"), url("text_font/gotham-medium.woff") format("woff"), url("text_font/gotham-medium.ttf") format("truetype"), url("text_font/gotham-medium.svg#Gotham-Med") format("svg"); }
-@font-face {
-  font-family: "Gotham-Light";
-  src: url("text_font/gotham-light.eot?") format("eot"), url("text_font/gotham-light.woff2") format("woff2"), url("text_font/gotham-light.woff") format("woff"), url("text_font/gotham-light.ttf") format("truetype"), url("text_font/gotham-light.svg#Gotham-Light") format("svg"); }
-@font-face {
-  font-family: "Gotham-Bold";
-  src: url("text_font/gotham-bold.eot?") format("eot"), url("text_font/gotham-bold.woff2") format("woff2"), url("text_font/gotham-bold.woff") format("woff"), url("text_font/gotham-bold.ttf") format("truetype"), url("text_font/gotham-bold.svg#Gotham-Bold") format("svg"); }
-@font-face {
-  font-family: "Gotham-Thin";
-  src: url("text_font/gotham-thin.eot?") format("eot"), url("text_font/gotham-thin.woff2") format("woff2"), url("text_font/gotham-thin.woff") format("woff"), url("text_font/gotham-thin.ttf") format("truetype"), url("text_font/gotham-thin.svg#Gotham-Thin") format("svg"); }
+.item-status-list .stat-value {
+  position: absolute;
+  top: .2rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.2em;
+  color: #fff; }
+.item-status-list > .item-status {
+  float: left;
+  position: relative;
+  margin-left: 5px;
+  margin-right: 5px; }
+
+#page-header {
+  background: #000; }
+
+#page-header .header_form {
+  padding-top: 30px;
+  /* change the color, font size, etc for the header_form */ }
+  @media screen and (min-width: 768px) {
+    #page-header .header_form .fa.fa-search {
+      position: absolute;
+      right: 35px;
+      top: 10px;
+      z-index: 2; } }
+  #page-header .header_form button[type="submit"] {
+    width: 100%;
+    background: #FAA519;
+    border-color: #FAA519;
+    color: #000;
+    text-transform: uppercase; }
+    #page-header .header_form button[type="submit"]:focus {
+      background: #FAA519;
+      border-color: #FAA519; }
+  #page-header .header_form .form-control {
+    font-size: 12px;
+    font-style: italic;
+    position: relative;
+    background: #383739;
+    border-color: #383739;
+    color: #fff; }
+    #page-header .header_form .form-control:focus {
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(100, 101, 103, 0.6);
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(100, 101, 103, 0.6); }
+
+.fa.fa-search {
+  transform: rotateY(360deg);
+  color: #fff; }
+
 /* --------------------- */
 /* --------------------- */
 footer {
-  position: static;
-  bottom: 0;
+  position: absolute;
   width: 100%;
   height: auto;
   background: #000;
@@ -10493,7 +10520,7 @@ footer {
     padding-top: 3px;
     padding-bottom: 3px; }
     footer ul li a {
-      color: #939597; }
+      color: #636265; }
       footer ul li a:focus, footer ul li a:active, footer ul li a:hover {
         color: #FAA519; }
   @media screen and (min-width: 768px) {
@@ -10518,14 +10545,40 @@ footer {
     font-size: .7em; }
     footer .copyright span {
       text-transform: uppercase; }
+  footer .back-to-top {
+    text-align: center;
+    font-size: 3em; }
 
 /*--*/
 .highlight {
   color: #FAA519; }
 
+html, body {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  min-height: 100%;
+  height: 100%; }
+
 body {
   font-family: 'Gotham-Med';
   font-size: 14px;
   position: relative; }
+
+.petarung-line {
+  border-top: 2px solid #636265; }
+  .petarung-line-highlight {
+    border-top: 1px solid #FAA519; }
+  @media (min-width: 768px) {
+    .petarung-line {
+      margin-left: 25px;
+      margin-right: 25px; } }
+
+header, content, footer {
+  display: block; }
+
+.page-content .text {
+  font-size: 47px; }
 
 /*# sourceMappingURL=main.css.map */
