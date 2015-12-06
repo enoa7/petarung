@@ -13,14 +13,22 @@ $(document).ready(function() {
     });
 
     var itemStatus = $('.item-status-list > .item-status');
+    
+    if($(window).width() >= 768) {
+            var circleSize = '55';
+    } else if ($(window).width() <= 320) {
+            var circleSize = '45';
+    } else {
+        var circleSize = '50';
+    };
+
     $(itemStatus).each(function(index, element){
     	var list = $(this).attr('data-value');
     	var getfill = $(this).attr('data-fcolor');
-    	console.log(getfill);
     	var getemptyfill = $(this).attr('data-bcolor');
     	$(this).circleProgress({
     		value: list,
-    		size: '45',
+    		size: circleSize,
     		fill: {color: getfill},
     		emptyFill: getemptyfill
     	}).on('circle-animation-progress', function(event, progress, stepValue) {
@@ -28,3 +36,11 @@ $(document).ready(function() {
 		});
     });
 });
+
+// if($(window).width() >= 1024) {
+//             // if larger or equal
+//             $('.element').show();
+//         } else {
+//             // if smaller
+//             $('.element').hide();
+//     }

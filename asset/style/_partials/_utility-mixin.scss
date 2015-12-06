@@ -29,3 +29,19 @@
     margin-left: 0;
     margin-right: 0;
 }
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin transform($args...) {
+  -webkit-transform: translate($args);
+  -moz-transform: translate($args);
+  -ms-transform: translate($args);
+  -o-transform: translate($args);
+  transform: translate($args);
+}

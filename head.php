@@ -25,4 +25,3 @@
 		<![endif]-->
 </head>
 
-<body>

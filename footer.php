@@ -43,8 +43,6 @@
         </div>
     </footer>
 <?php } ?>
-    </div> <!-- /container -->
     <!-- all compiled scripts -->
     <script type="text/javascript" src="asset/main.min.js"></script>
     <script type="text/javascript" src="asset/vendor/jquery-circle-progress/dist/circle-progress.js"></script>
-</html>
