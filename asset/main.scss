@@ -63,3 +63,9 @@ header, content, footer {
 .page-content .text {
 	font-size: $header-test;
 }
+
+.comment.mobile {
+	input {
+		height: 4em;
+	}
+}

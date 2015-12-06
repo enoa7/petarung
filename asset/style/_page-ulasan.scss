@@ -21,8 +21,16 @@
     &-category {
         color: $main-color;
         font-size: 1em;
-        font-size: 700;
+        font-weight: 700;
         text-transform: capitalize;
+        > span:after {
+            content: "\f111";
+            display: block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: .5em; //set the fontsize for the circle
+            float: right;
+            margin: 5px;
+        }
     }
     &-name {
         text-transform: capitalize;
@@ -148,11 +156,9 @@
 }
 
 .item.desktop .item-content {
-
     // add some space for the content on tablet
     padding-top: 20px;
     padding-bottom: 20px;
-
     // remove the space on desktop
     @media (min-width: 992px) {
         padding-top: 0;
