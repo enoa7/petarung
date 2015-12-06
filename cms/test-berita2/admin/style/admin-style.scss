@@ -1,0 +1,19 @@
+@import 'vendor/bootstrap/style/bootstrap';
+@import 'vendor/fontawesome/font-awesome';
+
+/*partials--*/
+@import 'style/base';
+
+/*kodein--*/
+@import 'style/var';
+@import 'style/fonts';
+@import 'style/kodein';
+
+/*admin page--*/
+@import 'style/admin-login';
+@import 'style/admin-home';
+
+body,
+.jumbotron {
+    background: #000;
+}

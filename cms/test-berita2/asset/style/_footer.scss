@@ -1,0 +1,72 @@
+/* --------------------- */
+
+// Footer Style
+
+/* --------------------- */
+
+footer {
+    // position: absolute;
+    width: 100%;
+    // height: auto;
+    background: #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    ul {
+        margin-bottom: 0;
+        float: left;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    ul li {
+        color: #fff;
+        text-transform: uppercase;
+        font-family: Gotham-Light;
+        font-size: .8em;
+        @include spacepad(3px);
+        a {
+            color: $secondary-color-light;
+            &:focus,
+            &:active,
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+    .form-group {
+        @media screen and (min-width: 768px) {
+            .fa.fa-search {
+                position: absolute;
+                right: 35px;
+                top: 10px;
+                z-index: 2;
+            }
+        }
+    }
+    .form-control {
+        font-size: $base-font-size - 2;
+        font-style: italic;
+        position: relative;
+        background: $secondary-color;
+        border-color: $secondary-color;
+        color: #fff;
+        &:focus {
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(100, 101, 103, 0.6);
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(100, 101, 103, 0.6);
+        }
+    }
+
+    .copyright {
+    	font-family: Gotham-Light;
+    	color: #fff;
+    	font-size: .7em;
+    	span {
+    		text-transform: uppercase;
+    	}
+    }
+
+    //back to top button (mobile only for now)
+    .back-to-top {
+        text-align: center;
+        font-size: 3em;
+    }
+}

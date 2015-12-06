@@ -1,0 +1,15 @@
+
+/*colors--*/
+$main-color: #FAA519; //orange
+$secondary-color: #383739; //black-gray
+$secondary-color-light: lighten($secondary-color, 17%);
+$secondary-color-dark: darken($secondary-color, 17%);
+
+/*special font color*/
+$special-font-color: #F36F21;
+
+/*size--*/
+$base-font-size: 14px;
+
+
+$header-test: floor(($font-size-base * 3.4)) !default; // ~48px

@@ -1,0 +1,41 @@
+.admin-login {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.admin-login .title {
+    background: $main-color;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#login {
+    .form-group {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        input {
+            background: $secondary-color-light;
+            border-color: $secondary-color-light;
+            color: #fff;
+        }
+    }
+    padding: 15px;
+    background-color: $secondary-color;
+    label {
+        color: #9c9b9b;
+        text-transform: capitalize;
+    }
+    button[type="submit"] {
+        float: right;
+        background: $main-color;
+        border-color: $main-color;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-transform: uppercase;
+        &:focus {
+            background: $main-color;
+            border-color: $main-color;
+        }
+    }
+}
