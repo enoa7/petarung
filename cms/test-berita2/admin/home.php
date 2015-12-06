@@ -40,7 +40,7 @@ include 'template/admin-header.php'
         <div class="col-xs-12 text-center"><a href="#">Artikel</a></div>
         <div class="col-xs-12 text-center"><a href="#">Ulasan Perlengkapan</a></div>
         <div class="col-xs-12 text-center"><a href="#">Ulasan Gym</a></div>
-        <button type="button" class="btn btn-primary"><a href="logout.php">Log Out</a></button>
+        <div class="col-xs-12 text-center"><a href="logout.php"><button type="button" class="btn btn-primary">Log Out</button></a></div>
       </div>
       </div>
     </div>
