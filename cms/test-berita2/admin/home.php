@@ -28,6 +28,7 @@ include 'template/admin-header.php'
 </form>
 </body> -->
 <body>
+<form id="form1" name="form1" method="post" action="">
   <div class="jumbotron">
     <div class="container">
       <div class="petarung-logo spacepad">
@@ -44,5 +45,6 @@ include 'template/admin-header.php'
       </div>
     </div>
   </div>
+</form>
 </body>
 </html>
